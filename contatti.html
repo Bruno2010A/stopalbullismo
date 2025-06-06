@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Contatta l'Iniziativa Anti-Bullismo per supporto, informazioni o collaborazioni." />
+    <title>Contatti - Iniziativa Anti-Bullismo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+      <meta name="description" content="Scopri la nostra missione, il team e i valori che guidano l'Iniziativa Anti-Bullismo. Insieme per un futuro senza bullismo." />
+  <meta name="keywords" content="anti-bullismo, missione, team, valori, supporto, sicurezza, inclusione" />
+  <meta name="author" content="Iniziativa Anti-Bullismo" />
+  <link rel="icon" href="img/STOPALBULLISMO.png" type="image/x-icon" />
+</head>
+<body>
+    <div>
+        <div class="navbar">
+            <img src="img/title.png" alt="Logo" class="logo" />
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articoli.html">Articoli</a></li>
+                <li><a href="supporto.html">Supporto</a></li>
+                <li><a href="contatti.html" class="active">Contatti</a></li>
+                <li><a href="chisiamo.html">Chi Siamo</a></li>
+                <li><a href="guide.html">Guide Pratiche</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="contact-container fade-in">
+        <section id="contact-form">
+            <h2>Scrivici</h2>
+            <form action="submit_form.php" method="POST" novalidate>
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Il tuo nome" required />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="La tua email" required />
+
+                <label for="subject">Oggetto</label>
+                <select id="subject" name="subject" required>
+                    <option value="" disabled selected>Seleziona un'opzione</option>
+                    <option value="supporto">Richiesta di supporto</option>
+                    <option value="info">Richiesta informazioni</option>
+                    <option value="scuola">Progetti per scuole</option>
+                    <option value="volontariato">Volontariato</option>
+                    <option value="altro">Altro</option>
+                </select>
+
+                <label for="message">Messaggio</label>
+                <textarea id="message" name="message" rows="5" placeholder="Scrivi qui il tuo messaggio" required></textarea>
+
+                <button type="submit">Invia</button>
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <h2>Altri Modi per Contattarci</h2>
+            <div class="contact-methods">
+                <div class="method">
+                    <h3>Telefono</h3>
+                    <p><strong>Helpline Anti-Bullismo:</strong> 800 123 456</p>
+                    <p>Attiva 24/7, chiamata gratuita</p>
+                    <p><strong>Uffici:</strong> 02 1234567</p>
+                </div>
+                <div class="method">
+                    <h3>Email</h3>
+                    <p><strong>Supporto:</strong> supporto@antibullismo.it</p>
+                    <p><strong>Scuole:</strong> scuole@antibullismo.it</p>
+                    <p><strong>Generale:</strong> info@antibullismo.it</p>
+                </div>
+                <div class="method">
+                    <h3>Sedi</h3>
+                    <p><strong>Milano:</strong> Via Roma 123</p>
+                    <p><strong>Roma:</strong> Via Milano 456</p>
+                    <p><strong>Napoli:</strong> Corso Umberto 789</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h2>Domande Frequenti</h2>
+            <div class="faq-item">
+                <h3>Quanto tempo ci vuole per una risposta?</h3>
+                <p>Rispondiamo entro 24 ore lavorative. Per emergenze, chiama subito la nostra helpline.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Offrite supporto psicologico gratuito?</h3>
+                <p>Sì, attraverso la nostra rete di professionisti volontari in tutta Italia.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Come posso diventare volontario?</h3>
+                <p>Compila il form specificando la tua disponibilità. Ti contatteremo per un colloquio.</p>
+            </div>
+        </section>
+    </div>
+
+    <button id="scrollTopBtn" title="Torna su">↑</button>
+</body>
+</html>
