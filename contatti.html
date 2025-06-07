@@ -7,11 +7,9 @@
     <title>Contatti - Iniziativa Anti-Bullismo</title>
     <link rel="stylesheet" href="style.css" />
     <script src="index.js" defer></script>
-      <meta name="description" content="Scopri la nostra missione, il team e i valori che guidano l'Iniziativa Anti-Bullismo. Insieme per un futuro senza bullismo." />
-  <meta name="keywords" content="anti-bullismo, missione, team, valori, supporto, sicurezza, inclusione" />
-  <meta name="author" content="Iniziativa Anti-Bullismo" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="img/STOPALBULLISMO.png" type="image/x-icon" />
+    <meta name="keywords" content="anti-bullismo, supporto, contatti, aiuto, inclusione" />
+    <meta name="author" content="Iniziativa Anti-Bullismo" />
+    <link rel="icon" href="img/STOPALBULLISMO.png" type="image/x-icon" />
 </head>
 <body>
     <div>
@@ -26,13 +24,17 @@
                 <li><a href="guide.html">Guide Pratiche</a></li>
             </ul>
         </div>
-
     </div>
 
     <div class="contact-container fade-in">
         <section id="contact-form">
             <h2>Scrivici</h2>
-            <form action="submit_form.php" method="POST" novalidate>
+            <form action="https://formsubmit.co/supporto@stopalbullismo.org" method="POST" novalidate>
+                <!-- Redirect to thank you page after submit -->
+                <input type="hidden" name="_next" value="https://stopalbullismo.org/thankyou.html" />
+                <!-- Disable captcha -->
+                <input type="hidden" name="_captcha" value="false" />
+
                 <label for="name">Nome</label>
                 <input type="text" id="name" name="name" placeholder="Il tuo nome" required />
 
@@ -67,9 +69,9 @@
                 </div>
                 <div class="method">
                     <h3>Email</h3>
-                    <p><strong>Supporto:</strong> supporto@antibullismo.it</p>
-                    <p><strong>Scuole:</strong> scuole@antibullismo.it</p>
-                    <p><strong>Generale:</strong> info@antibullismo.it</p>
+                    <p><strong>Supporto:</strong> supporto@stopalbullismo.org</p>
+                    <p><strong>Scuole:</strong> scuole@stopalbullismo.org</p>
+                    <p><strong>Generale:</strong> info@stopalbullismo.org</p>
                 </div>
                 <div class="method">
                     <h3>Sedi</h3>
