@@ -30,7 +30,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Invio email
     if (mail($to, $email_subject, $email_body, $headers)) {
-        echo "Grazie per averci contattato, $nome. Ti risponderemo il prima possibile.";
+        // Redirect alla pagina di ringraziamento
+        header("Location: thankyou.html");
+        exit;
     } else {
         echo "Si è verificato un errore, il messaggio non è stato inviato.";
     }
