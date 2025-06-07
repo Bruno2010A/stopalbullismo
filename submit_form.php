@@ -1,40 +1,40 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Basic sanitization
-    $name = strip_tags(trim($_POST["name"]));
+    // Pulizia dei dati
+    $nome = strip_tags(trim($_POST["name"]));
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-    $subject = strip_tags(trim($_POST["subject"]));
-    $message = trim($_POST["message"]);
+    $oggetto = strip_tags(trim($_POST["subject"]));
+    $messaggio = trim($_POST["message"]);
 
-    // Validate required fields
-    if ( empty($name) || empty($email) || empty($subject) || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo "Please fill in all fields correctly.";
+    // Controllo campi obbligatori
+    if (empty($nome) || empty($email) || empty($oggetto) || empty($messaggio) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Per favore, compila correttamente tutti i campi.";
         exit;
     }
 
-    // Recipient email (your email)
-    $to = "your.email@example.com";  // <-- change this to your email address
+    // Email destinatario
+    $to = "supporto@stopalbullismo.org";
 
-    // Email subject line
-    $email_subject = "New Contact Form Submission: $subject";
+    // Oggetto email
+    $email_subject = "Nuovo messaggio dal form di contatto: $oggetto";
 
-    // Email content
-    $email_body = "You have received a new message from StopAlBullismo.org website contact form.\n\n".
-                  "Name: $name\n".
+    // Corpo email
+    $email_body = "Hai ricevuto un nuovo messaggio dal sito StopAlBullismo.org.\n\n".
+                  "Nome: $nome\n".
                   "Email: $email\n".
-                  "Subject: $subject\n".
-                  "Message:\n$message\n";
+                  "Oggetto: $oggetto\n".
+                  "Messaggio:\n$messaggio\n";
 
-    // Email headers
-    $headers = "From: $name <$email>";
+    // Intestazioni email
+    $headers = "From: $nome <$email>";
 
-    // Send the email
+    // Invio email
     if (mail($to, $email_subject, $email_body, $headers)) {
-        echo "Thank you for contacting us, $name. We will respond as soon as possible.";
+        echo "Grazie per averci contattato, $nome. Ti risponderemo il prima possibile.";
     } else {
-        echo "Oops! Something went wrong and your message could not be sent.";
+        echo "Si è verificato un errore, il messaggio non è stato inviato.";
     }
 } else {
-    echo "Invalid request.";
+    echo "Richiesta non valida.";
 }
 ?>
