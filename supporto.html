@@ -2,26 +2,25 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Supporto | Iniziativa Anti-Bullismo</title>
   <link rel="stylesheet" href="style.css" />
   <script src="index.js" defer></script>
   <meta name="description" content="Hai bisogno di aiuto? Qui trovi numeri utili, consigli pratici e risorse per affrontare il bullismo in ogni sua forma." />
   <meta name="keywords" content="supporto bullismo, aiuto, emergenza, vittime, testimoni, genitori, insegnanti" />
   <meta name="author" content="Iniziativa Anti-Bullismo" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="img/STOPALBULLISMO.png" type="image/x-icon" />
 </head>
 <body>
   <header>
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Menu principale">
       <a href="index.html">
         <img src="img/title.png" alt="Logo Anti-Bullismo" class="logo" />
       </a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="articoli.html">Articoli</a></li>
-        <li><a href="supporto.html" class="active">Supporto</a></li>
+        <li><a href="supporto.html" class="active" aria-current="page">Supporto</a></li>
         <li><a href="contatti.html">Contatti</a></li>
         <li><a href="chisiamo.html">Chi Siamo</a></li>
         <li><a href="guide.html">Guide</a></li>
@@ -30,94 +29,102 @@
   </header>
 
   <main class="support-container fade-in">
-    <section class="emergency">
-      <h2>In Caso di Emergenza</h2>
+    <section class="emergency" aria-labelledby="emergency-title">
+      <h2 id="emergency-title">In Caso di Emergenza</h2>
       <div class="emergency-content">
-        <div class="emergency-card">
+        <article class="emergency-card" aria-label="Emergenza generale">
           <h3>Hai bisogno di aiuto subito?</h3>
-          <p>Chiama il <strong>112</strong> o il <strong>113</strong> — rispondono 24 ore su 24.</p>
-        </div>
-        <div class="emergency-card urgent">
+          <p>Chiama il <strong>112</strong> o il <strong>113</strong> — rispondono 24 ore su 24, ogni giorno dell'anno.</p>
+          <p>Questi numeri sono i più rapidi per ricevere assistenza immediata dalle forze dell'ordine o dai servizi di emergenza.</p>
+        </article>
+        <article class="emergency-card urgent" aria-label="Linea Anti-Bullismo">
           <h3>Linea Anti-Bullismo</h3>
-          <p><strong>800 123 456</strong> – gratuita e sempre attiva</p>
-          <p>Puoi anche usare la chat direttamente dal nostro sito</p>
-        </div>
+          <p><strong>800 123 456</strong> – Numero gratuito e sempre attivo per supporto e consulenza.</p>
+          <p>La linea offre ascolto, consigli pratici e indicazioni su come procedere in caso di bullismo.</p>
+          <p>È possibile anche accedere a una chat online direttamente dal nostro sito per comunicare in modo discreto e immediato.</p>
+        </article>
       </div>
     </section>
 
-    <section class="resources">
+    <section class="resources" aria-label="Consigli e supporto">
       <h2>Come Possiamo Aiutarti</h2>
-      <div class="tab-content active" id="victim">
+
+      <article class="tab-content active" id="victim" tabindex="0">
         <h3>Se sei vittima di bullismo</h3>
         <ol>
-          <li><strong>Non restare solo:</strong> Parlane con qualcuno di cui ti fidi</li>
-          <li><strong>Raccogli le prove:</strong> Conserva messaggi, screenshot o altri contenuti</li>
-          <li><strong>Segnala l'accaduto:</strong> Alle piattaforme online o a chi può intervenire</li>
-          <li><strong>Chiedi aiuto professionale:</strong> Un supporto psicologico può fare la differenza</li>
-          <li><strong>Ricorda:</strong> Non è colpa tua. Meriti rispetto e sicurezza</li>
+          <li><strong>Non restare solo:</strong> Parla con una persona di cui ti fidi, come un amico, un familiare o un insegnante. Il supporto è fondamentale.</li>
+          <li><strong>Raccogli le prove:</strong> Conserva messaggi, foto, video o qualsiasi altro elemento che possa dimostrare il comportamento molesto.</li>
+          <li><strong>Segnala l'accaduto:</strong> Rivolgiti a piattaforme online, alla scuola o alle autorità competenti per denunciare l'abuso.</li>
+          <li><strong>Chiedi aiuto professionale:</strong> Psicologi e centri di supporto possono aiutarti a superare il trauma e a costruire strategie di difesa.</li>
+          <li><strong>Ricorda:</strong> Non sei responsabile di ciò che ti accade. Hai diritto a sicurezza, rispetto e dignità.</li>
         </ol>
-        <p><a href="#">Scarica la guida completa (PDF)</a></p>
-      </div>
+        <p>Non esitare a cercare aiuto e a proteggere il tuo benessere emotivo e fisico.</p>
+      </article>
 
-      <div class="tab-content" id="witness">
+      <article class="tab-content" id="witness" tabindex="0">
         <h3>Se sei testimone</h3>
         <ul>
-          <li><strong>Non restare a guardare:</strong> Anche chi assiste ha un ruolo importante</li>
-          <li><strong>Fai sentire il tuo sostegno:</strong> Basta un "Come stai?" per cambiare qualcosa</li>
-          <li><strong>Chiedi aiuto:</strong> Coinvolgi un adulto di fiducia</li>
-          <li><strong>Distrai l'attenzione:</strong> Se è sicuro, cambia contesto o interrompi la situazione</li>
+          <li><strong>Non restare a guardare:</strong> La tua reazione può fare la differenza nel sostenere la vittima e fermare il bullismo.</li>
+          <li><strong>Fai sentire il tuo sostegno:</strong> Un semplice "Come stai?" può aiutare chi è vittima a sentirsi meno isolato.</li>
+          <li><strong>Chiedi aiuto:</strong> Rivolgiti a un adulto di fiducia per intervenire in modo sicuro e adeguato.</li>
+          <li><strong>Distrai l'attenzione:</strong> Se ti senti sicuro, prova a cambiare il contesto o a interrompere la situazione per distogliere l'aggressore.</li>
         </ul>
-      </div>
+        <p>Ricorda, la solidarietà è uno strumento potente contro il bullismo.</p>
+      </article>
 
-      <div class="tab-content" id="parent">
+      <article class="tab-content" id="parent" tabindex="0">
         <h3>Se sei un genitore</h3>
         <div class="parent-signs">
           <div class="sign">
             <h4>Comportamenti insoliti</h4>
-            <p>Paura di andare a scuola, irritabilità o isolamento</p>
+            <p>Il bambino o ragazzo può mostrare paura di andare a scuola, irritabilità, isolamento o cambiamenti repentini nell'umore.</p>
           </div>
           <div class="sign">
             <h4>Segnali fisici</h4>
-            <p>Lividi frequenti, oggetti rotti o persi</p>
+            <p>Attenzione a lividi frequenti, graffi, oggetti rotti o perduti senza spiegazioni.</p>
           </div>
           <div class="sign">
             <h4>Emozioni fuori equilibrio</h4>
-            <p>Ansia, pianti improvvisi, difficoltà a dormire</p>
+            <p>Ansia, pianti improvvisi, difficoltà a dormire o cambiamenti nelle abitudini alimentari possono essere segnali importanti.</p>
           </div>
         </div>
         <h3>Come puoi aiutarlo</h3>
-        <p><strong>1. Ascolta senza giudicare</strong> – Il primo passo è fargli sapere che sei lì per lui</p>
-        <p><strong>2. Parla con la scuola</strong> – Insieme si trovano soluzioni più efficaci</p>
-        <p><strong>3. Cerca un esperto</strong> – Un aiuto professionale può essere prezioso</p>
-      </div>
+        <p><strong>1. Ascolta senza giudicare</strong> – Mostra empatia e disponibilità, facendo capire che sei al suo fianco in ogni momento.</p>
+        <p><strong>2. Parla con la scuola</strong> – Collabora con insegnanti e dirigenti per individuare soluzioni efficaci e sostenere tuo figlio.</p>
+        <p><strong>3. Cerca un esperto</strong> – Psicologi, counselor o associazioni specializzate possono offrire un supporto fondamentale.</p>
+        <p>La tua attenzione e il tuo sostegno possono fare la differenza per superare questa difficile esperienza.</p>
+      </article>
 
-      <div class="tab-content" id="educator">
+      <article class="tab-content" id="educator" tabindex="0">
         <h3>Per insegnanti ed educatori</h3>
         <ul>
-          <li><strong>Costruisci un clima di classe sicuro:</strong> Dove tutti si sentano accolti</li>
-          <li><strong>Intervieni con chiarezza:</strong> Non ignorare i segnali</li>
-          <li><strong>Mediazione e dialogo:</strong> Quando è possibile, crea un confronto protetto</li>
-          <li><strong>Osserva con attenzione:</strong> A volte il disagio è silenzioso</li>
+          <li><strong>Costruisci un clima di classe sicuro:</strong> Promuovi l'inclusione e il rispetto reciproco tra gli studenti.</li>
+          <li><strong>Intervieni con chiarezza:</strong> Non sottovalutare mai segnali di disagio o episodi di bullismo.</li>
+          <li><strong>Mediazione e dialogo:</strong> Quando possibile, facilita il confronto tra le parti coinvolte in un ambiente protetto.</li>
+          <li><strong>Osserva con attenzione:</strong> A volte il disagio è silenzioso e si manifesta attraverso cambiamenti nel comportamento.</li>
         </ul>
-        <p><a href="#">Scarica il kit per insegnanti (PDF)</a></p>
-      </div>
+        <p>Gli educatori hanno un ruolo chiave nella prevenzione e nel contrasto del bullismo.</p>
+      </article>
     </section>
 
-    <section class="external-resources">
+    <section class="external-resources" aria-label="Risorse esterne">
       <h2>Risorse Esterne Consigliate</h2>
       <div class="resource-cards">
-        <div class="resource-card">
+        <article class="resource-card" tabindex="0">
           <h3>Telefono Azzurro</h3>
-          <p><strong>1.96.96</strong> – Numero gratuito per bambini e ragazzi</p>
-        </div>
-        <div class="resource-card">
+          <p>Numero gratuito per bambini e ragazzi: <strong>1.96.96</strong></p>
+          <p>Offre ascolto e sostegno in situazioni di difficoltà, anche in caso di bullismo.</p>
+        </article>
+        <article class="resource-card" tabindex="0">
           <h3>Centro Anti-Cyberbullismo</h3>
-          <p><a href="https://www.anticiberbullismo.it">anticiberbullismo.it</a> – Formazione e supporto online</p>
-        </div>
-        <div class="resource-card">
+          <p>Formazione e supporto online per affrontare il cyberbullismo.</p>
+          <p>Visita il sito: <a href="https://www.anticiberbullismo.it" target="_blank" rel="noopener noreferrer">anticiberbullismo.it</a></p>
+        </article>
+        <article class="resource-card" tabindex="0">
           <h3>App "No Bullismo"</h3>
-          <p>Per segnalazioni anonime e contatto diretto con esperti</p>
-        </div>
+          <p>Strumento per segnalazioni anonime e contatto diretto con esperti del settore.</p>
+          <p>Disponibile gratuitamente per dispositivi mobili.</p>
+        </article>
       </div>
     </section>
   </main>
