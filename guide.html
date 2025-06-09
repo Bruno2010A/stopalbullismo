@@ -2,26 +2,42 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Guide Pratiche | Anti-Bullismo</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="index.js" defer></script>
-  <meta name="description" content="Scopri la nostra missione, il team e i valori che guidano l'Iniziativa Anti-Bullismo. Insieme per un futuro senza bullismo." />
-  <meta name="keywords" content="anti-bullismo, missione, team, valori, supporto, sicurezza, inclusione" />
-  <meta name="author" content="Iniziativa Anti-Bullismo" />
-  <link rel="icon" href="img/STOPALBULLISMO.png" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guide per Categoria</title>
   <style>
-    /* Optional: reset margin/padding for body */
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #fff;
+      margin: 20px;
+      background: #f9f9f9;
       color: #333;
     }
-
-    /* Container for image box */
-    .image-container {
-      flex: 1;
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .guides-categories {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .category-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    .category-card {
+      display: flex;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 100%;
+      max-width: 1100px;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .category-card > div:first-child {
+      flex: 1 1 150px;
       min-width: 150px;
       height: 150px;
       background-color: #eee;
@@ -31,230 +47,233 @@
       justify-content: center;
       overflow: hidden;
     }
-
-    /* Make images fit nicely */
-    .image-container img {
+    .category-card > div:first-child img {
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
       border-radius: 10px;
-      display: block;
+    }
+    .category-card > div:nth-child(2) {
+      flex: 3 1 500px;
+      min-width: 300px;
+    }
+    .category-card h3 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      color: #0066cc;
+    }
+    article {
+      margin-bottom: 25px;
+    }
+    article h4 {
+      margin-bottom: 10px;
+      color: #004a99;
+    }
+    article p {
+      margin: 8px 0;
+      line-height: 1.4;
+    }
+    ul {
+      margin: 10px 0 10px 20px;
+      list-style-type: disc;
+      color: #555;
+    }
+    ul li {
+      margin-bottom: 6px;
     }
 
-    /* Example of category card styles (inline in original, you might want to keep here) */
-    .category-card {
-      border: 2px solid #333;
-      padding: 20px;
-      margin-bottom: 30px;
-      border-radius: 12px;
-      display: flex;
-      gap: 30px;
+    /* Responsive */
+    @media (max-width: 900px) {
+      .category-card {
+        flex-direction: column;
+        align-items: center;
+      }
+      .category-card > div:nth-child(2) {
+        min-width: 100%;
+      }
     }
   </style>
 </head>
 <body>
-  
-  <nav class="navbar">
-    <a href="index.html">
-      <img src="img/title.png" alt="Logo" class="logo" />
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="articoli.html">Articoli</a></li>
-      <li><a href="supporto.html">Supporto</a></li>
-      <li><a href="contatti.html">Contatti</a></li>
-      <li><a href="chisiamo.html">Chi Siamo</a></li>
-      <li><a href="guide.html">Guide Pratiche</a></li>
-    </ul>
-  </nav>
+  <section class="guides-categories">
+    <h2>Guide per Categoria</h2>
 
-  <main class="guides-container fade-in">
+    <div class="category-cards">
 
-    <section class="guides-categories">
-      <h2>Guide per Categoria</h2>
-
-      <div class="category-cards">
-
-        <!-- STUDENTI -->
-        <div class="category-card">
-          <div class="image-container">
-            <img src="student.jpg" alt="Studenti" />
-          </div>
-
-          <div style="flex: 3;">
-            <h3>Studenti</h3>
-
-            <article style="margin-bottom: 20px;">
-              <h4>Come difendersi dal bullismo</h4>
-              <p>
-                Il bullismo può manifestarsi in molte forme, dal fisico al verbale, fino a quello psicologico. Imparare a difendersi significa innanzitutto riconoscere i segnali e adottare strategie efficaci per proteggersi. 
-              </p>
-              <p>Alcuni metodi fondamentali includono:</p>
-              <ul>
-                <li>Mantenere la calma e non rispondere con violenza.</li>
-                <li>Parlare con una persona di fiducia come insegnanti, genitori o amici.</li>
-                <li>Costruire autostima e fiducia in se stessi con attività che valorizzano le proprie capacità.</li>
-                <li>Evita situazioni a rischio quando possibile e cerca supporto.</li>
-              </ul>
-              <p>Ricorda che chiedere aiuto non è mai un segno di debolezza, ma di coraggio.</p>
-            </article>
-
-            <article style="margin-bottom: 20px;">
-              <h4>Guida al cyberbullismo per ragazzi</h4>
-              <p>
-                Il cyberbullismo si verifica attraverso mezzi digitali come social network, messaggi, email o forum. Spesso è più subdolo perché può accadere 24 ore su 24, raggiungendo le vittime anche a casa.
-              </p>
-              <p>Ecco alcuni consigli pratici per proteggersi:</p>
-              <ul>
-                <li>Impostare sempre la privacy dei profili social al massimo livello.</li>
-                <li>Non condividere informazioni personali o foto compromettenti.</li>
-                <li>Bloccare e segnalare utenti molesti sulle piattaforme digitali.</li>
-                <li>Conservare prove come screenshot per eventuali segnalazioni.</li>
-                <li>Parlare con adulti di fiducia se si ricevono messaggi minacciosi o offensivi.</li>
-              </ul>
-              <p>La consapevolezza digitale è la tua migliore arma contro il cyberbullismo.</p>
-            </article>
-
-            <article>
-              <h4>Diventare un alleato: guida per bystanders</h4>
-              <p>
-                Spesso chi assiste a episodi di bullismo si sente impotente o ha paura di intervenire. Questa guida ti mostra come diventare un vero alleato, aiutando la vittima senza esporre te stesso a rischi.
-              </p>
-              <p>Strategie efficaci per bystanders:</p>
-              <ul>
-                <li>Intervenire con calma e fermezza se ti senti sicuro.</li>
-                <li>Distrarre l’aggressore per interrompere il comportamento.</li>
-                <li>Offrire supporto alla vittima dopo l’episodio, anche solo ascoltandola.</li>
-                <li>Segnalare il problema a un adulto o autorità scolastica.</li>
-                <li>Creare un ambiente inclusivo e rispettoso per prevenire futuri casi.</li>
-              </ul>
-              <p>Essere un alleato significa scegliere di fare la cosa giusta, anche quando è difficile.</p>
-            </article>
-          </div>
+      <div class="category-card">
+        <div>
+          <img src="student.jpg" alt="Studenti" />
         </div>
 
-        <!-- GENITORI -->
-        <div class="category-card">
-          <div class="image-container">
-            <img src="genitori.jpeg" alt="Genitori" />
-          </div>
+        <div>
+          <h3>Studenti</h3>
 
-          <div style="flex: 3;">
-            <h3>Genitori</h3>
+          <article>
+            <h4>Come difendersi dal bullismo</h4>
+            <p>
+              Il bullismo può manifestarsi in molte forme, dal fisico al verbale, fino a quello psicologico. Imparare a difendersi significa innanzitutto riconoscere i segnali e adottare strategie efficaci per proteggersi. 
+            </p>
+            <p>Alcuni metodi fondamentali includono:</p>
+            <ul>
+              <li>Mantenere la calma e non rispondere con violenza.</li>
+              <li>Parlare con una persona di fiducia come insegnanti, genitori o amici.</li>
+              <li>Costruire autostima e fiducia in se stessi con attività che valorizzano le proprie capacità.</li>
+              <li>Evita situazioni a rischio quando possibile e cerca supporto.</li>
+            </ul>
+            <p>Ricorda che chiedere aiuto non è mai un segno di debolezza, ma di coraggio.</p>
+          </article>
 
-            <article style="margin-bottom: 20px;">
-              <h4>Riconoscere i segnali: checklist per genitori</h4>
-              <p>
-                I genitori sono spesso la prima linea di difesa contro il bullismo. È importante osservare cambiamenti nel comportamento dei figli, che possono indicare un problema.
-              </p>
-              <p>Segnali comuni includono:</p>
-              <ul>
-                <li>Improvvisi cali di rendimento scolastico.</li>
-                <li>Isolamento sociale o evitamento di determinate situazioni.</li>
-                <li>Segni fisici inspiegabili come lividi o graffi.</li>
-                <li>Cambiamenti nell’umore, ansia o tristezza persistente.</li>
-                <li>Perdita di interesse per attività un tempo amate.</li>
-              </ul>
-              <p>Tenere un dialogo aperto e non giudicante è fondamentale per far sentire il figlio ascoltato e protetto.</p>
-            </article>
+          <article>
+            <h4>Guida al cyberbullismo per ragazzi</h4>
+            <p>
+              Il cyberbullismo si verifica attraverso mezzi digitali come social network, messaggi, email o forum. Spesso è più subdolo perché può accadere 24 ore su 24, raggiungendo le vittime anche a casa.
+            </p>
+            <p>Ecco alcuni consigli pratici per proteggersi:</p>
+            <ul>
+              <li>Impostare sempre la privacy dei profili social al massimo livello.</li>
+              <li>Non condividere informazioni personali o foto compromettenti.</li>
+              <li>Bloccare e segnalare utenti molesti sulle piattaforme digitali.</li>
+              <li>Conservare prove come screenshot per eventuali segnalazioni.</li>
+              <li>Parlare con adulti di fiducia se si ricevono messaggi minacciosi o offensivi.</li>
+            </ul>
+            <p>La consapevolezza digitale è la tua migliore arma contro il cyberbullismo.</p>
+          </article>
 
-            <article style="margin-bottom: 20px;">
-              <h4>Come parlare con la scuola</h4>
-              <p>
-                Collaborare con la scuola è un passo cruciale per risolvere situazioni di bullismo. La comunicazione deve essere chiara, rispettosa e orientata alla soluzione.
-              </p>
-              <p>Ecco come procedere:</p>
-              <ul>
-                <li>Fissare un incontro con insegnanti, responsabili o counselor scolastici.</li>
-                <li>Portare esempi concreti di episodi o segnali di bullismo.</li>
-                <li>Chiedere informazioni sui protocolli anti-bullismo adottati dalla scuola.</li>
-                <li>Proporre una collaborazione attiva per monitorare la situazione.</li>
-                <li>Richiedere un piano di intervento chiaro e condiviso.</li>
-              </ul>
-              <p>Il dialogo costruttivo tra famiglia e scuola è fondamentale per proteggere il benessere del ragazzo.</p>
-            </article>
-
-            <article>
-              <h4>Supporto emotivo a figli vittime di bullismo</h4>
-              <p>
-                Il bullismo può lasciare ferite emotive profonde. I genitori devono offrire un ambiente sicuro, empatico e di sostegno.
-              </p>
-              <p>Suggerimenti per supportare i figli:</p>
-              <ul>
-                <li>Ascoltare senza giudicare, lasciando che esprimano i propri sentimenti.</li>
-                <li>Validare le emozioni, spiegando che non sono soli.</li>
-                <li>Incoraggiare attività che favoriscano l’autostima e la socializzazione.</li>
-                <li>Se necessario, rivolgersi a professionisti come psicologi o counselor.</li>
-                <li>Monitorare i progressi e mantenere un contatto costante.</li>
-              </ul>
-              <p>Il sostegno familiare è un pilastro essenziale nel percorso di guarigione.</p>
-            </article>
-          </div>
+          <article>
+            <h4>Diventare un alleato: guida per bystanders</h4>
+            <p>
+              Spesso chi assiste a episodi di bullismo si sente impotente o ha paura di intervenire. Questa guida ti mostra come diventare un vero alleato, aiutando la vittima senza esporre te stesso a rischi.
+            </p>
+            <p>Strategie efficaci per bystanders:</p>
+            <ul>
+              <li>Intervenire con calma e fermezza se ti senti sicuro.</li>
+              <li>Distrarre l’aggressore per interrompere il comportamento.</li>
+              <li>Offrire supporto alla vittima dopo l’episodio, anche solo ascoltandola.</li>
+              <li>Segnalare il problema a un adulto o autorità scolastica.</li>
+              <li>Creare un ambiente inclusivo e rispettoso per prevenire futuri casi.</li>
+            </ul>
+            <p>Essere un alleato significa scegliere di fare la cosa giusta, anche quando è difficile.</p>
+          </article>
         </div>
-
-        <!-- INSEGNANTI -->
-        <div class="category-card">
-          <div class="image-container">
-            <img src="teacher.jpeg" alt="Insegnanti" />
-          </div>
-
-          <div style="flex: 3;">
-            <h3>Insegnanti</h3>
-
-            <article style="margin-bottom: 20px;">
-              <h4>Strategie didattiche per prevenire il bullismo</h4>
-              <p>
-                Gli insegnanti svolgono un ruolo chiave nella prevenzione del bullismo attraverso attività educative e la creazione di un clima scolastico positivo.
-              </p>
-              <p>Consigli pratici:</p>
-              <ul>
-                <li>Includere lezioni sul rispetto, l’empatia e la diversità nel programma scolastico.</li>
-                <li>Favorire attività di gruppo che promuovano la collaborazione e l’inclusione.</li>
-                <li>Riconoscere e valorizzare i comportamenti positivi tra studenti.</li>
-                <li>Essere modelli di comportamento rispettoso e assertivo.</li>
-                <li>Creare un canale aperto di comunicazione con studenti e famiglie.</li>
-              </ul>
-              <p>Un ambiente scolastico sano è la miglior difesa contro il bullismo.</p>
-            </article>
-
-            <article style="margin-bottom: 20px;">
-              <h4>Gestire episodi di bullismo in classe</h4>
-              <p>
-                Quando si verificano episodi di bullismo, è fondamentale agire prontamente e con decisione.
-              </p>
-              <p>Linee guida:</p>
-              <ul>
-                <li>Intervenire immediatamente per fermare il comportamento.</li>
-                <li>Ascoltare tutte le parti coinvolte senza pregiudizi.</li>
-                <li>Applicare le regole scolastiche in modo coerente.</li>
-                <li>Coinvolgere il supporto della dirigenza e del personale specializzato.</li>
-                <li>Seguire un percorso di recupero per vittima e aggressore.</li>
-              </ul>
-              <p>La gestione tempestiva è essenziale per evitare che il problema si aggravi.</p>
-            </article>
-
-            <article>
-              <h4>Creare un ambiente scolastico inclusivo</h4>
-              <p>
-                La prevenzione del bullismo passa anche dalla promozione di un clima inclusivo e rispettoso.
-              </p>
-              <p>Azioni utili:</p>
-              <ul>
-                <li>Organizzare eventi e workshop su temi di inclusione e diversità.</li>
-                <li>Incoraggiare la partecipazione di tutti gli studenti nelle attività scolastiche.</li>
-                <li>Collaborare con associazioni e enti locali per programmi anti-bullismo.</li>
-                <li>Promuovere la cultura della solidarietà e del rispetto reciproco.</li>
-                <li>Monitorare costantemente l’atmosfera in classe e intervenire precocemente.</li>
-              </ul>
-              <p>Un ambiente inclusivo favorisce il benessere e la crescita di ogni studente.</p>
-            </article>
-          </div>
-        </div>
-
       </div>
-    </section>
 
-  </main>
+      <div class="category-card">
+        <div>
+          <img src="genitori.jpeg" alt="Genitori" />
+        </div>
 
+        <div>
+          <h3>Genitori</h3>
+
+          <article>
+            <h4>Riconoscere i segnali: checklist per genitori</h4>
+            <p>
+              I genitori sono spesso la prima linea di difesa contro il bullismo. È importante osservare cambiamenti nel comportamento dei figli, che possono indicare un problema.
+            </p>
+            <p>Segnali comuni includono:</p>
+            <ul>
+              <li>Improvvisi cali di rendimento scolastico.</li>
+              <li>Isolamento sociale o evitamento di determinate situazioni.</li>
+              <li>Segni fisici inspiegabili come lividi o graffi.</li>
+              <li>Cambiamenti nell’umore, ansia o tristezza persistente.</li>
+              <li>Perdita di interesse per attività un tempo amate.</li>
+            </ul>
+            <p>Tenere un dialogo aperto e non giudicante è fondamentale per far sentire il figlio ascoltato e protetto.</p>
+          </article>
+
+          <article>
+            <h4>Come parlare con la scuola</h4>
+            <p>
+              Collaborare con la scuola è un passo cruciale per risolvere situazioni di bullismo. La comunicazione deve essere chiara, rispettosa e orientata alla soluzione.
+            </p>
+            <p>Ecco come procedere:</p>
+            <ul>
+              <li>Fissare un incontro con insegnanti, responsabili o counselor scolastici.</li>
+              <li>Portare esempi concreti di episodi o segnali di bullismo.</li>
+              <li>Chiedere informazioni sui protocolli anti-bullismo adottati dalla scuola.</li>
+              <li>Proporre una collaborazione attiva per monitorare la situazione.</li>
+              <li>Richiedere un piano di intervento chiaro e condiviso.</li>
+            </ul>
+            <p>Il dialogo costruttivo tra famiglia e scuola è fondamentale per proteggere il benessere del ragazzo.</p>
+          </article>
+
+          <article>
+            <h4>Supporto emotivo a figli vittime di bullismo</h4>
+            <p>
+              Il bullismo può lasciare ferite emotive profonde. I genitori devono offrire un ambiente sicuro, empatico e di sostegno.
+            </p>
+            <p>Suggerimenti per supportare i figli:</p>
+            <ul>
+              <li>Ascoltare senza giudicare, lasciando che esprimano i propri sentimenti.</li>
+              <li>Validare le emozioni, spiegando che non sono soli.</li>
+              <li>Incoraggiare attività che favoriscano l’autostima e la socializzazione.</li>
+              <li>Se necessario, rivolgersi a professionisti come psicologi o counselor.</li>
+              <li>Monitorare i progressi e mantenere un contatto costante.</li>
+            </ul>
+            <p>Il sostegno familiare è un pilastro essenziale nel percorso di guarigione.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <div>
+          <img src="teacher.jpeg" alt="Insegnanti" />
+        </div>
+
+        <div>
+          <h3>Insegnanti</h3>
+
+          <article>
+            <h4>Strategie didattiche per prevenire il bullismo</h4>
+            <p>
+              Gli insegnanti svolgono un ruolo chiave nella prevenzione del bullismo attraverso attività educative e la creazione di un clima scolastico positivo.
+            </p>
+            <p>Consigli pratici:</p>
+            <ul>
+              <li>Includere lezioni sul rispetto, l’empatia e la diversità nel programma scolastico.</li>
+              <li>Favorire attività di gruppo che promuovano la collaborazione e l’inclusione.</li>
+              <li>Riconoscere e valorizzare i comportamenti positivi tra studenti.</li>
+              <li>Essere modelli di comportamento rispettoso e assertivo.</li>
+              <li>Creare un canale aperto di comunicazione con studenti e famiglie.</li>
+            </ul>
+            <p>Un ambiente scolastico sano è la miglior difesa contro il bullismo.</p>
+          </article>
+
+          <article>
+            <h4>Gestire episodi di bullismo in classe</h4>
+            <p>
+              Quando si verificano episodi di bullismo, è fondamentale agire prontamente e con decisione.
+            </p>
+            <p>Linee guida:</p>
+            <ul>
+              <li>Intervenire immediatamente per fermare il comportamento.</li>
+              <li>Ascoltare tutte le parti coinvolte senza pregiudizi.</li>
+              <li>Applicare le regole scolastiche in modo coerente.</li>
+              <li>Coinvolgere il supporto della dirigenza e del personale specializzato.</li>
+              <li>Seguire un percorso di recupero per vittima e aggressore.</li>
+            </ul>
+            <p>La gestione tempestiva è essenziale per evitare che il problema si aggravi.</p>
+          </article>
+
+          <article>
+            <h4>Creare un ambiente scolastico inclusivo</h4>
+            <p>
+              La prevenzione del bullismo passa anche dalla promozione di un clima inclusivo e rispettoso.
+            </p>
+            <p>Azioni utili:</p>
+            <ul>
+              <li>Organizzare eventi e workshop su temi di inclusione e diversità.</li>
+              <li>Incoraggiare la partecipazione di tutti gli studenti nelle attività scolastiche.</li>
+              <li>Collaborare con associazioni e enti locali per programmi anti-bullismo.</li>
+              <li>Promuovere la cultura della solidarietà e del rispetto reciproco.</li>
+              <li>Monitorare costantemente l’atmosfera in classe e intervenire precocemente.</li>
+            </ul>
+            <p>Un ambiente inclusivo favorisce il benessere e la crescita di ogni studente.</p>
+          </article>
+        </div>
+      </div>
+
+    </div>
+  </section>
 </body>
 </html>
